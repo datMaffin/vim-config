@@ -1,6 +1,6 @@
 " Set my colorscheme
 " Add runtimepath, so vim will find it
-set runtimepath+=~/dotfiles/vim
+set runtimepath+=fnamemodify(resolve(expand('<sfile>:p')), ':h')
 colorscheme bionik
 
 
