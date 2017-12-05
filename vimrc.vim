@@ -1,6 +1,7 @@
 " Set my colorscheme
-" Add runtimepath, so vim will find it
-set runtimepath+=fnamemodify(resolve(expand('<sfile>:p')), ':h')
+" Add folder of vimrc.vim script to runtimepath, so vim will find colors etc.
+execute 'set runtimepath+=' . expand('<sfile>:p:h')
+
 colorscheme bionik
 
 
