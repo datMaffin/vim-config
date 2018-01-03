@@ -11,6 +11,9 @@ set nocompatible
 " An alternative to the escape key
 inoremap jk <Esc>
 
+" Make backspace work as expected (deletes everything)
+set backspace=indent,eol,start
+
 " CTRL-U in insert mode deletes a lot. Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
