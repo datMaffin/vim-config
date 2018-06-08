@@ -8,8 +8,9 @@ colorscheme bionik
 "
 set nocompatible
 
-" An alternative to the escape key
-inoremap jk <Esc>
+" Alternatives for the escape key
+imap jk <Esc>
+imap <S-Space> <Esc>
 
 " Make backspace work as expected (deletes everything)
 set backspace=indent,eol,start
