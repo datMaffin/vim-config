@@ -12,6 +12,9 @@ set nocompatible
 imap jk <Esc>
 imap <S-Space> <Esc>
 
+" Paste in insert mode (alternative: use middle mouse button...)
+imap <C-p> <Space><Esc>"+Pa
+
 " Make backspace work as expected (deletes everything)
 set backspace=indent,eol,start
 
