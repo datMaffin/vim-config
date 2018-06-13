@@ -39,13 +39,13 @@ if &background == "dark"
     hi Constant     term=bold       ctermfg=LightGray                       guifg=#C0C0C0                   cterm=bold      gui=bold
     hi Identifier                   ctermfg=LightGray                       guifg=#C0C0C0
     hi Statement                    ctermfg=DarkBlue                        guifg=#7070E0                   cterm=bold      gui=bold
-    hi Comment      term=italic     ctermfg=DarkGreen                       guifg=#00e600                   cterm=italic    gui=italic
+    hi Comment      term=italic     ctermfg=DarkGreen                       guifg=#00e600                                   gui=italic
 else
     hi Normal                                                                               guibg=#FFFFFF
     hi Constant                     ctermfg=Black                           guifg=#000000                   cterm=bold      gui=bold
     hi Identifier                   ctermfg=Black                           guifg=#000000
     hi Statement                    ctermfg=DarkBlue                        guifg=#3333cc                   cterm=bold      gui=bold
-    hi Comment      term=italic     ctermfg=DarkGreen                       guifg=#30A030                   cterm=italic    gui=italic
+    hi Comment      term=italic     ctermfg=DarkGreen                       guifg=#30A030                                   gui=italic
 endif
 
 hi PreProc                          ctermfg=DarkYellow                      guifg=#e68a00
