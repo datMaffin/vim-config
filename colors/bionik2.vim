@@ -122,6 +122,8 @@ exe 'hi Special          term=none       ctermfg=DarkMagenta ctermbg=none       
 "hi SpecialComment   term=none       ctermfg=DarkMagenta ctermbg=none        guifg=#C000C0                   cterm=none      gui=none
 "hi Debug            term=none       ctermfg=DarkMagenta ctermbg=none        guifg=#C000C0                   cterm=none      gui=none
 
+exe 'hi Title            term=underline  ctermfg=DarkMagenta ctermbg=none        guifg=' . DarkMagenta .' guibg=' . NoneBG .   ' cterm=underline,bold gui=underline,bold'
+
 " Stuff linked to PreProc
 exe 'hi PreProc          term=none       ctermfg=DarkYellow ctermbg=none         guifg=' . DarkYellow .' guibg=' . NoneBG .    ' cterm=none      gui=none'
 "hi Include          term=none       ctermfg=DarkYellow ctermbg=none         guifg=#e68a00                  cterm=none      gui=none

@@ -12,7 +12,7 @@ set nocompatible
 imap jk <Esc>
 
 " Paste in insert mode (alternative: use middle mouse button...)
-imap <C-p> <Space><Esc>"+Pa
+" imap <C-p> <Space><Esc>"+Pa
 
 " Make backspace work as expected (deletes everything)
 set backspace=indent,eol,start
@@ -30,7 +30,7 @@ set showmatch       " Show matching brackets.
 set ignorecase      " Do case insensitive matching
 set ttymouse=xterm2 " Compatibility with tmux
 set mouse=a	        " Enable mouse support (all modes)
-set scrolloff=2     " Show a few lines of context around the cursor
+set scrolloff=4     " Show a few lines of context around the cursor
 syntax on           " Syntax highlighting
 set autoindent      " see :h
 set smartindent     " see :h
