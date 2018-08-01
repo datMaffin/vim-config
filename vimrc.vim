@@ -2,7 +2,7 @@
 " Add folder of vimrc.vim script to runtimepath, so vim will find colors etc.
 execute 'set runtimepath+=' . expand('<sfile>:p:h')
 
-colorscheme bionik
+colorscheme bionik2
 
 
 "
@@ -10,7 +10,6 @@ set nocompatible
 
 " Alternatives for the escape key
 imap jk <Esc>
-imap <S-Space> <Esc>
 
 " Paste in insert mode (alternative: use middle mouse button...)
 imap <C-p> <Space><Esc>"+Pa
