@@ -80,7 +80,7 @@ exe 'hi ColorColumn      term=none       ctermfg=none        ctermbg=LightGray  
 "hi Directory        term=bold       ctermfg=DarkMagenta ctermbg=none        guifg=#7070E0   guibg=#FFFFFF   cterm=none      gui=none
 exe 'hi Search           term=reverse    ctermfg=none        ctermbg=LightGray   guifg=' . NoneFG .   ' guibg=' . LightGray .  ' cterm=none      gui=none'
 
-exe 'hi MatchParen       term=reverse    ctermfg=DarkCyan    ctermbg=none        guifg=' . DarkCyan .                          ' cterm=reverse   gui=reverse'
+exe 'hi MatchParen       term=reverse    ctermfg=none        ctermbg=DarkGreen                          guibg=' . DarkGreen .  ' cterm=none      gui=none'
 exe 'hi Visual           term=reverse    ctermfg=none        ctermbg=none                               guibg=' . NoneBG .     ' cterm=reverse   gui=reverse'
 "hi VisualNOS        term=reverse    ctermfg=none        ctermbg=none                        guibg=#FFFFFF   cterm=reverse   gui=reverse
 
