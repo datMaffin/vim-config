@@ -85,9 +85,9 @@ exe 'hi Visual           term=reverse    ctermfg=none        ctermbg=none       
 "hi VisualNOS        term=reverse    ctermfg=none        ctermbg=none                        guibg=#FFFFFF   cterm=reverse   gui=reverse
 
 exe 'hi Underlined       term=underline  ctermfg=none        ctermbg=none                                                        cterm=underline gui=underline'
-exe 'hi Error            term=none       ctermfg=DarkRed     ctermbg=none        guifg=' . DarkGreen .' guibg=' . NoneBG .     ' cterm=underline,reverse gui=none'
-exe 'hi ErrorMsg         term=none       ctermfg=DarkRed     ctermbg=none        guifg=' . DarkGreen .' guibg=' . NoneBG .     ' cterm=reverse   gui=reverse'
-"hi WarningMsg       term=none       ctermfg=DarkYellow  ctermbg=none        guifg=DarkYellow guibg=#FFFFFF   cterm=none      gui=none
+exe 'hi Error            term=none       ctermfg=DarkRed     ctermbg=none        guifg=' . DarkRed   .' guibg=' . NoneBG .     ' cterm=bold,reverse gui=bold,reverse'
+exe 'hi ErrorMsg         term=none       ctermfg=DarkRed     ctermbg=none        guifg=' . DarkRed   .' guibg=' . NoneBG .     ' cterm=reverse   gui=reverse'
+exe 'hi WarningMsg       term=none       ctermfg=DarkYellow  ctermbg=none        guifg=' . DarkYellow.' guibg=' . NoneBG .     ' cterm=reverse   gui=reverse'
 
 " Stuff linked to Constant
 exe 'hi Constant         term=none       ctermfg=none        ctermbg=none        guifg=' . NoneFG .   ' guibg=' . NoneBG .     ' cterm=bold      gui=bold '
