@@ -57,6 +57,7 @@ set statusline+=\ %P    "percent through file
 " rows
 set number              " Enable the line numbers
 set relativenumber      " Enable relative line numbers
+set cursorline          " Highlight cursor line
 
 " mark the 80th column
 set colorcolumn=80      

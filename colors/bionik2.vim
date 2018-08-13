@@ -36,6 +36,7 @@ let DarkRed        = '#E60000'
 let DarkMagenta    = '#B30070'
 let DarkYellow     = '#E66E00'
 let LightGray      = '#E0E0E0'
+let LighterGray    = '#F8F8F8'
 let NoneFG         = '#000000'
 let NoneBG         = '#FFFFFF'
 
@@ -76,6 +77,7 @@ exe 'hi Folded           term=none       ctermfg=DarkCyan    ctermbg=none       
 "hi SignColumn       term=none       ctermfg=White       ctermbg=DarkCyan    guifg=#FFFFFF   guibg=#008080   cterm=none      gui=none
 
 exe 'hi ColorColumn      term=none       ctermfg=none        ctermbg=LightGray                          guibg=' . LightGray .  ' cterm=none      gui=none'
+exe 'hi CursorLine       term=none       ctermfg=none        ctermbg=LightGray                          guibg=' . LighterGray. ' cterm=none      gui=none'
 
 "hi Directory        term=bold       ctermfg=DarkMagenta ctermbg=none        guifg=#7070E0   guibg=#FFFFFF   cterm=none      gui=none
 exe 'hi Search           term=reverse    ctermfg=none        ctermbg=LightGray   guifg=' . NoneFG .   ' guibg=' . LightGray .  ' cterm=none      gui=none'
