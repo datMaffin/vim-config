@@ -68,7 +68,7 @@ let NoneBG         = '#FFFFFF'
 " Syntax (:help group-name)
 
 exe 'hi Normal           term=none       ctermfg=none        ctermbg=none        guifg=' . NoneFG .   ' guibg=' . NoneBG .     ' cterm=none      gui=none'
-"hi Cursor           term=reverse    ctermfg=LightGray   ctermbg=Black       guifg=#FFFFFF   guibg=#000000   cterm=none      gui=none
+"exe 'hi Cursor           term=reverse    ctermfg=bg          ctermbg=fg          guifg=' . NoneBG .   ' guibg=' . NoneFG .     ' cterm=none      gui=none'
 exe 'hi LineNr           term=none       ctermfg=none        ctermbg=LightGray   guifg=' . NoneFG .   ' guibg=' . LightGray .  ' cterm=none      gui=none'
 exe 'hi CursorLineNr     term=none       ctermfg=none        ctermbg=none        guifg=' . NoneFG .   ' guibg=' . NoneBG .     ' cterm=bold      gui=bold'
 
@@ -77,7 +77,7 @@ exe 'hi Folded           term=none       ctermfg=DarkCyan    ctermbg=none       
 "hi SignColumn       term=none       ctermfg=White       ctermbg=DarkCyan    guifg=#FFFFFF   guibg=#008080   cterm=none      gui=none
 
 exe 'hi ColorColumn      term=none       ctermfg=none        ctermbg=LightGray                          guibg=' . LightGray .  ' cterm=none      gui=none'
-exe 'hi CursorLine       term=none       ctermfg=none        ctermbg=LightGray                          guibg=' . LighterGray. ' cterm=none      gui=none'
+exe 'hi CursorLine       term=none       ctermfg=none        ctermbg=none                               guibg=' . LighterGray. ' cterm=none      gui=none'
 
 "hi Directory        term=bold       ctermfg=DarkMagenta ctermbg=none        guifg=#7070E0   guibg=#FFFFFF   cterm=none      gui=none
 exe 'hi Search           term=reverse    ctermfg=none        ctermbg=LightGray   guifg=' . NoneFG .   ' guibg=' . LightGray .  ' cterm=none      gui=none'

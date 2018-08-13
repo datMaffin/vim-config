@@ -59,6 +59,8 @@ set number              " Enable the line numbers
 set relativenumber      " Enable relative line numbers
 set cursorline          " Highlight cursor line
 
+set showbreak=@
+
 " mark the 80th column
 set colorcolumn=80      
 
@@ -80,3 +82,7 @@ augroup line_return
 		\ endif
 augroup END
 
+" greater default size when in gvim
+if has('gui_running')
+    set lines=40 columns=95
+endif
