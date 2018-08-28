@@ -12,7 +12,7 @@ set nocompatible
 imap jk <Esc>
 
 " Paste in insert mode (alternative: use middle mouse button...)
-imap <C-p> <Space><Esc>"+Pa
+" imap <C-p> <Space><Esc>"+Pa
 
 " Make backspace work as expected (deletes everything)
 set backspace=indent,eol,start
@@ -30,7 +30,7 @@ set showmatch       " Show matching brackets.
 set ignorecase      " Do case insensitive matching
 set ttymouse=xterm2 " Compatibility with tmux
 set mouse=a	        " Enable mouse support (all modes)
-set scrolloff=2     " Show a few lines of context around the cursor
+set scrolloff=4     " Show a few lines of context around the cursor
 syntax on           " Syntax highlighting
 set autoindent      " see :h
 set smartindent     " see :h
@@ -57,6 +57,9 @@ set statusline+=\ %P    "percent through file
 " rows
 set number              " Enable the line numbers
 set relativenumber      " Enable relative line numbers
+set cursorline          " Highlight cursor line
+
+set showbreak=@
 
 " mark the 80th column
 set colorcolumn=80      
@@ -79,3 +82,7 @@ augroup line_return
 		\ endif
 augroup END
 
+" greater default size when in gvim
+if has('gui_running')
+    set lines=40 columns=95
+endif

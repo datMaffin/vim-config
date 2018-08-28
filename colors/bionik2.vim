@@ -36,6 +36,7 @@ let DarkRed        = '#E60000'
 let DarkMagenta    = '#B30070'
 let DarkYellow     = '#E66E00'
 let LightGray      = '#E0E0E0'
+let LighterGray    = '#F8F8F8'
 let NoneFG         = '#000000'
 let NoneBG         = '#FFFFFF'
 
@@ -67,27 +68,28 @@ let NoneBG         = '#FFFFFF'
 " Syntax (:help group-name)
 
 exe 'hi Normal           term=none       ctermfg=none        ctermbg=none        guifg=' . NoneFG .   ' guibg=' . NoneBG .     ' cterm=none      gui=none'
-"hi Cursor           term=reverse    ctermfg=LightGray   ctermbg=Black       guifg=#FFFFFF   guibg=#000000   cterm=none      gui=none
+"exe 'hi Cursor           term=reverse    ctermfg=bg          ctermbg=fg          guifg=' . NoneBG .   ' guibg=' . NoneFG .     ' cterm=none      gui=none'
 exe 'hi LineNr           term=none       ctermfg=Black       ctermbg=LightGray   guifg=' . NoneFG .   ' guibg=' . LightGray .  ' cterm=none      gui=none'
-exe 'hi CursorLineNr     term=none       ctermfg=none        ctermbg=none        guifg=' . NoneFG .   ' guibg=' . NoneBG .     ' cterm=bold      gui=bold'
+exe 'hi CursorLineNr     term=none       ctermfg=none        ctermbg=none        guifg=' . NoneFG .   ' guibg=' . LighterGray .' cterm=bold      gui=bold'
 
 exe 'hi FoldColumn       term=none       ctermfg=DarkCyan    ctermbg=none        guifg=' . DarkCyan . ' guibg=' . NoneBG .     ' cterm=reverse   gui=reverse'
 exe 'hi Folded           term=none       ctermfg=DarkCyan    ctermbg=none        guifg=' . DarkCyan . ' guibg=' . NoneBG .     ' cterm=reverse   gui=reverse,italic'
 "hi SignColumn       term=none       ctermfg=White       ctermbg=DarkCyan    guifg=#FFFFFF   guibg=#008080   cterm=none      gui=none
 
 exe 'hi ColorColumn      term=none       ctermfg=none        ctermbg=LightGray                          guibg=' . LightGray .  ' cterm=none      gui=none'
+exe 'hi CursorLine       term=none       ctermfg=none        ctermbg=none                               guibg=' . LighterGray. ' cterm=none      gui=none'
 
 "hi Directory        term=bold       ctermfg=DarkMagenta ctermbg=none        guifg=#7070E0   guibg=#FFFFFF   cterm=none      gui=none
 exe 'hi Search           term=reverse    ctermfg=none        ctermbg=LightGray   guifg=' . NoneFG .   ' guibg=' . LightGray .  ' cterm=none      gui=none'
 
-exe 'hi MatchParen       term=reverse    ctermfg=DarkCyan    ctermbg=none        guifg=' . DarkCyan .                          ' cterm=reverse   gui=reverse'
+exe 'hi MatchParen       term=reverse    ctermfg=none        ctermbg=DarkGreen                          guibg=' . DarkGreen .  ' cterm=none      gui=none'
 exe 'hi Visual           term=reverse    ctermfg=none        ctermbg=none                               guibg=' . NoneBG .     ' cterm=reverse   gui=reverse'
 "hi VisualNOS        term=reverse    ctermfg=none        ctermbg=none                        guibg=#FFFFFF   cterm=reverse   gui=reverse
 
 exe 'hi Underlined       term=underline  ctermfg=none        ctermbg=none                                                        cterm=underline gui=underline'
-exe 'hi Error            term=none       ctermfg=DarkRed     ctermbg=none        guifg=' . DarkGreen .' guibg=' . NoneBG .     ' cterm=underline,reverse gui=none'
-exe 'hi ErrorMsg         term=none       ctermfg=DarkRed     ctermbg=none        guifg=' . DarkGreen .' guibg=' . NoneBG .     ' cterm=reverse   gui=reverse'
-"hi WarningMsg       term=none       ctermfg=DarkYellow  ctermbg=none        guifg=DarkYellow guibg=#FFFFFF   cterm=none      gui=none
+exe 'hi Error            term=none       ctermfg=DarkRed     ctermbg=none        guifg=' . DarkRed   .' guibg=' . NoneBG .     ' cterm=bold,reverse gui=bold,reverse'
+exe 'hi ErrorMsg         term=none       ctermfg=DarkRed     ctermbg=none        guifg=' . DarkRed   .' guibg=' . NoneBG .     ' cterm=reverse   gui=reverse'
+exe 'hi WarningMsg       term=none       ctermfg=DarkYellow  ctermbg=none        guifg=' . DarkYellow.' guibg=' . NoneBG .     ' cterm=reverse   gui=reverse'
 
 " Stuff linked to Constant
 exe 'hi Constant         term=none       ctermfg=none        ctermbg=none        guifg=' . NoneFG .   ' guibg=' . NoneBG .     ' cterm=bold      gui=bold '
@@ -121,6 +123,8 @@ exe 'hi Special          term=none       ctermfg=DarkMagenta ctermbg=none       
 "hi Delimiter        term=none       ctermfg=DarkMagenta ctermbg=none        guifg=#C000C0                   cterm=none      gui=none
 "hi SpecialComment   term=none       ctermfg=DarkMagenta ctermbg=none        guifg=#C000C0                   cterm=none      gui=none
 "hi Debug            term=none       ctermfg=DarkMagenta ctermbg=none        guifg=#C000C0                   cterm=none      gui=none
+
+exe 'hi Title            term=underline  ctermfg=DarkMagenta ctermbg=none        guifg=' . DarkMagenta .' guibg=' . NoneBG .   ' cterm=underline,bold gui=underline,bold'
 
 " Stuff linked to PreProc
 exe 'hi PreProc          term=none       ctermfg=DarkYellow ctermbg=none         guifg=' . DarkYellow .' guibg=' . NoneBG .    ' cterm=none      gui=none'
