@@ -68,7 +68,7 @@ let NoneBG         = '#FFFFFF'
 
 exe 'hi Normal           term=none       ctermfg=none        ctermbg=none        guifg=' . NoneFG .   ' guibg=' . NoneBG .     ' cterm=none      gui=none'
 "hi Cursor           term=reverse    ctermfg=LightGray   ctermbg=Black       guifg=#FFFFFF   guibg=#000000   cterm=none      gui=none
-exe 'hi LineNr           term=none       ctermfg=none        ctermbg=LightGray   guifg=' . NoneFG .   ' guibg=' . LightGray .  ' cterm=none      gui=none'
+exe 'hi LineNr           term=none       ctermfg=Black       ctermbg=LightGray   guifg=' . NoneFG .   ' guibg=' . LightGray .  ' cterm=none      gui=none'
 exe 'hi CursorLineNr     term=none       ctermfg=none        ctermbg=none        guifg=' . NoneFG .   ' guibg=' . NoneBG .     ' cterm=bold      gui=bold'
 
 exe 'hi FoldColumn       term=none       ctermfg=DarkCyan    ctermbg=none        guifg=' . DarkCyan . ' guibg=' . NoneBG .     ' cterm=reverse   gui=reverse'
