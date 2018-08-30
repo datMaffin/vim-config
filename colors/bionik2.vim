@@ -114,7 +114,7 @@ exe 'hi Statement        term=bold       ctermfg=DarkBlue    ctermbg=none       
 "hi Keyword          term=none       ctermfg=none        ctermbg=none                                        cterm=none      gui=none 
 "hi Exception        term=none       ctermfg=none        ctermbg=none                                        cterm=none      gui=none 
 
-exe 'hi Comment          term=none       ctermfg=DarkGreen   ctermbg=none        guifg=' . DarkGreen .' guibg=' . NoneBG .     ' cterm=none      gui=italic'
+exe 'hi Comment          term=none       ctermfg=DarkGreen   ctermbg=none        guifg=' . DarkGreen .' guibg=' . NoneBG .     ' cterm=none      gui=none'
 
 " Stuff linked to Special
 exe 'hi Special          term=none       ctermfg=DarkMagenta ctermbg=none        guifg=' . DarkMagenta .' guibg=' . NoneBG .   ' cterm=none      gui=none'
