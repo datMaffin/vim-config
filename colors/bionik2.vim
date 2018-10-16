@@ -140,3 +140,8 @@ exe 'hi Type             term=bold       ctermfg=DarkMagenta ctermbg=none       
 "hi Typedef          term=bold       ctermfg=DarkCyan    ctermbg=none        guifg=#20A0A0                   cterm=bold      gui=bold 
 
 " Vim features (:help highlight-groups) or (:help hl-...)
+
+" Neovim LanguageClient Stuff
+exe 'hi ALEErrorSign   term=none       ctermfg=DarkRed     ctermbg=none        guifg=' . DarkRed   .' guibg=' . NoneBG .     ' cterm=bold,reverse gui=bold,reverse'
+exe 'hi ALEWarningSign term=none       ctermfg=DarkRed     ctermbg=none        guifg=' . DarkYellow.' guibg=' . NoneBG .     ' cterm=bold,reverse gui=bold,reverse'
+exe 'hi ALEInfoSign    term=none       ctermfg=DarkRed     ctermbg=none        guifg=' . DarkBlue  .' guibg=' . NoneBG .     ' cterm=bold,reverse gui=bold,reverse'
