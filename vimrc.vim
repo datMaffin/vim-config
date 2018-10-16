@@ -41,7 +41,12 @@ set shiftwidth=4    " Number of spaces inserted for indentation
 
 set laststatus=2
 
-set statusline=%t       "tail of the filename
+set statusline= 
+set statusline+=%#StatusLine#
+set statusline+=\ %f       "tail of the filename
+set statusline+=
+set statusline+=%#LineNr#
+set statusline+=
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
 set statusline+=%{&ff}] "file format
 set statusline+=%h      "help file flag

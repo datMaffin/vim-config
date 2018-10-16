@@ -91,6 +91,9 @@ exe 'hi Error            term=none       ctermfg=DarkRed     ctermbg=none       
 exe 'hi ErrorMsg         term=none       ctermfg=DarkRed     ctermbg=none        guifg=' . DarkRed   .' guibg=' . NoneBG .     ' cterm=reverse   gui=reverse'
 exe 'hi WarningMsg       term=none       ctermfg=DarkYellow  ctermbg=none        guifg=' . DarkYellow.' guibg=' . NoneBG .     ' cterm=reverse   gui=reverse'
 
+" StatusLine stuff
+exe 'hi StatusLine       term=none       ctermfg=none        ctermbg=LightGray   guifg=' . LightGray .   ' guibg=' . DarkBlue .' cterm=bold,reverse gui=bold'
+
 " Stuff linked to Constant
 exe 'hi Constant         term=none       ctermfg=none        ctermbg=none        guifg=' . NoneFG .   ' guibg=' . NoneBG .     ' cterm=bold      gui=bold '
 "hi Boolean          term=none       ctermfg=DarkRed     ctermbg=none        guifg=#E02020
