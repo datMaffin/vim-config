@@ -92,7 +92,7 @@ exe 'hi ErrorMsg         term=none       ctermfg=DarkRed     ctermbg=none       
 exe 'hi WarningMsg       term=none       ctermfg=DarkYellow  ctermbg=none        guifg=' . DarkYellow.' guibg=' . NoneBG .     ' cterm=reverse   gui=reverse'
 
 " StatusLine stuff
-exe 'hi StatusLine       term=none       ctermfg=none        ctermbg=none        guifg=' . NoneBG    .   ' guibg=' . DarkBlue .' cterm=bold,reverse gui=bold'
+exe 'hi StatusLine       term=none       ctermfg=DarkBlue    ctermbg=none        guifg=' . NoneBG    .   ' guibg=' . DarkBlue .' cterm=bold,reverse gui=bold'
 
 " Stuff linked to Constant
 exe 'hi Constant         term=none       ctermfg=none        ctermbg=none        guifg=' . NoneFG .   ' guibg=' . NoneBG .     ' cterm=bold      gui=bold '
